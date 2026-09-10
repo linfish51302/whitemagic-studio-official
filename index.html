@@ -114,17 +114,16 @@
     <!-- Top Navigation Bar -->
     <nav class="fixed top-0 left-0 w-full z-50 glass-card border-b border-gold/20 px-4 sm:px-8 py-3 transition-all duration-300">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-           <!-- Brand Logo (大尺寸醒目版) -->
-<a href="#hero" class="flex items-center gap-3.5 group">
-    <!-- 將外框進一步放大至 w-14 h-14 sm:w-16 sm:h-16 (約 56px~64px) -->
-    <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center shrink-0 filter drop-shadow-[0_0_10px_rgba(229,193,88,0.5)] group-hover:scale-105 transition-transform duration-300">
-        <img src="images/logo2.png" alt="白魔法藝術工作室 Logo" class="w-full h-full object-contain">
-    </div>
-    <div class="flex flex-col justify-center">
-        <span class="font-serif font-bold text-white text-base sm:text-xl tracking-wider block leading-tight group-hover:text-gold transition-colors">白魔法藝術工作室</span>
-        <span class="font-cinzel text-[10px] sm:text-[11px] text-gold/80 tracking-widest block mt-0.5 font-medium">WHITE MAGIC ART STUDIO</span>
-    </div>
-</a>
+            <!-- Brand Logo (大尺寸醒目版) -->
+            <a href="#hero" class="flex items-center gap-3.5 group">
+                <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center shrink-0 filter drop-shadow-[0_0_10px_rgba(229,193,88,0.5)] group-hover:scale-105 transition-transform duration-300">
+                    <img src="images/logo2.png" alt="白魔法藝術工作室 Logo" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <span class="font-serif font-bold text-white text-base sm:text-xl tracking-wider block leading-tight group-hover:text-gold transition-colors">白魔法藝術工作室</span>
+                    <span class="font-cinzel text-[10px] sm:text-[11px] text-gold/80 tracking-widest block mt-0.5 font-medium">WHITE MAGIC ART STUDIO</span>
+                </div>
+            </a>
 
             <!-- Desktop Links -->
             <div class="hidden lg:flex items-center space-x-6 text-xs sm:text-sm tracking-wider font-medium">
@@ -169,83 +168,76 @@
     </nav>
 
     <!-- Hero Section (帶工作室背景與質感亮粉版) -->
-<section id="hero" class="min-h-screen pt-28 pb-16 px-4 sm:px-6 max-w-7xl mx-auto flex flex-col justify-center relative z-10">
-    
-    <!-- 工作室背景假想圖疊加層 -->
-    <div class="absolute inset-0 -z-10 rounded-3xl overflow-hidden my-6 border border-gold/20 shadow-2xl">
-        <!-- 實體背景圖 -->
-        <img src="images/hero-bg.jpg" alt="工作室假想圖" class="w-full h-full object-cover object-center opacity-30 scale-105 filter blur-[1px]">
-        <!-- 暗色黑金漸層遮罩，確保前排文字極致清晰 -->
-        <div class="absolute inset-0 bg-gradient-to-b from-[#0A0B0E] via-[#0A0B0E]/70 to-[#0A0B0E]"></div>
-        <div class="absolute inset-0 bg-radial-vignette opacity-80"></div>
-    </div>
-
-    <!-- Welcome Banner內容 (維持原樣) -->
-    <div id="concept" class="text-center max-w-5xl mx-auto mb-16 pt-8 relative scroll-mt-28">
-      
-      <!-- 背景神聖金光氛圍暈 -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold/15 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
-<!-- 1. 頂部精緻小 Logo + 神聖魔法標籤 -->
-<div class="flex flex-col items-center gap-3 mb-6">
-  
-  <!-- 精緻小尺寸工作室 Logo (絕不搶戲) -->
-  <div class="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center filter drop-shadow-[0_0_12px_rgba(229,193,88,0.4)] hover:scale-105 transition-transform duration-300">
-    <img src="images/logo2.png" alt="白魔法藝術工作室 Logo" class="w-full h-full object-contain">
-  </div>
-
-  <!-- 神聖魔法標籤 -->
-  <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-black/70 border border-gold/40 shadow-lg shadow-gold/10 backdrop-blur-md">
-    <i class="fa-solid fa-cross text-gold text-xs"></i>
-    <span class="text-xs font-cinzel text-gold tracking-[0.25em] uppercase font-bold">FAITH × AUDIOVISUAL ALCHEMY</span>
-    <i class="fa-solid fa-wand-magic-sparkles text-gold text-xs animate-spin-slow"></i>
-  </div>
-
-</div>
-      
-      <!-- 2. 主標題 -->
-      <h1 class="text-4xl sm:text-6xl md:text-7xl font-black font-serif text-gradient-gold tracking-tight drop-shadow-2xl">
-        歡迎來到白魔法藝術工作室
-      </h1>
-      
-      <!-- 3. 副標題 -->
-      <p class="text-slate-200 text-base sm:text-lg font-light max-w-2xl mx-auto leading-relaxed pt-8 italic drop-shadow">
-        「以『創作』，回應祂的『創造』。」<br class="hidden sm:inline">
-        <span class="text-slate-300 text-sm sm:text-base font-normal not-italic">融合電影敘事、感性配樂與奇幻靈魂，為世界打造療癒心靈的藝術作品。</span>
-      </p>
-
-      <!-- 4. 三大核心魔法徽章 -->
-      <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-2xl mx-auto pt-8">
-        <div class="p-3.5 rounded-2xl bg-black/60 border border-gold/30 flex flex-col items-center gap-1.5 backdrop-blur-md hover:border-gold/60 transition-all shadow-lg">
-          <i class="fa-solid fa-church text-gold text-base"></i>
-          <span class="text-xs font-bold text-white">信仰基石</span>
-          <span class="text-[10px] text-slate-400">Faith Inspired</span>
-        </div>
-        <div class="p-3.5 rounded-2xl bg-black/60 border border-gold/30 flex flex-col items-center gap-1.5 backdrop-blur-md hover:border-gold/60 transition-all shadow-lg">
-          <i class="fa-solid fa-compact-disc text-gold text-base animate-spin-slow"></i>
-          <span class="text-xs font-bold text-white">聲效魔法</span>
-          <span class="text-[10px] text-slate-400">Sound Magic</span>
-        </div>
-        <div class="p-3.5 rounded-2xl bg-black/60 border border-gold/30 flex flex-col items-center gap-1.5 backdrop-blur-md hover:border-gold/60 transition-all shadow-lg">
-          <i class="fa-solid fa-clapperboard text-gold text-base"></i>
-          <span class="text-xs font-bold text-white">影音敘事</span>
-          <span class="text-[10px] text-slate-400">Visual Story</span>
-        </div>
-      </div>
-
-      <!-- 5. 按鈕區塊 -->
-      <div class="pt-10 flex flex-wrap items-center justify-center gap-4">
-        <a href="https://instagram.com/whitemagic_studio" target="_blank" class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-gradient-to-r from-purple-600 via-pink-500 to-amber-500 text-white font-bold text-xs sm:text-sm shadow-xl shadow-pink-500/20 hover:scale-105 transition-all">
-          <i class="fa-brands fa-instagram text-lg"></i>
-          點按追蹤 @WHITEMAGIC_STUDIO
-        </a>
+    <section id="hero" class="min-h-screen pt-28 pb-16 px-4 sm:px-6 max-w-7xl mx-auto flex flex-col justify-center relative z-10">
         
-        <a href="#contact" class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-black/80 border border-gold/60 text-gold font-bold text-xs sm:text-sm hover:bg-gold hover:text-black hover:scale-105 transition-all shadow-lg backdrop-blur-md">
-          <i class="fa-solid fa-paper-plane text-xs"></i>
-          洽詢與報價委託
-        </a>
-      </div>
-    </div>
-</section>
+        <!-- 工作室背景假想圖疊加層 -->
+        <div class="absolute inset-0 -z-10 rounded-3xl overflow-hidden my-6 border border-gold/20 shadow-2xl">
+            <img src="images/hero-bg.jpg" alt="工作室假想圖" class="w-full h-full object-cover object-center opacity-30 scale-105 filter blur-[1px]">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0A0B0E] via-[#0A0B0E]/70 to-[#0A0B0E]"></div>
+            <div class="absolute inset-0 bg-radial-vignette opacity-80"></div>
+        </div>
+
+        <!-- Welcome Banner內容 -->
+        <div id="concept" class="text-center max-w-5xl mx-auto mb-16 pt-8 relative scroll-mt-28">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold/15 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
+            
+            <!-- 1. 頂部精緻小 Logo + 神聖魔法標籤 -->
+            <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center filter drop-shadow-[0_0_12px_rgba(229,193,88,0.4)] hover:scale-105 transition-transform duration-300">
+                    <img src="images/logo2.png" alt="白魔法藝術工作室 Logo" class="w-full h-full object-contain">
+                </div>
+
+                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-black/70 border border-gold/40 shadow-lg shadow-gold/10 backdrop-blur-md">
+                    <i class="fa-solid fa-cross text-gold text-xs"></i>
+                    <span class="text-xs font-cinzel text-gold tracking-[0.25em] uppercase font-bold">FAITH × AUDIOVISUAL ALCHEMY</span>
+                    <i class="fa-solid fa-wand-magic-sparkles text-gold text-xs animate-spin-slow"></i>
+                </div>
+            </div>
+            
+            <!-- 2. 主標題 -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black font-serif text-gradient-gold tracking-tight drop-shadow-2xl">
+                歡迎來到白魔法藝術工作室
+            </h1>
+            
+            <!-- 3. 副標題 -->
+            <p class="text-slate-200 text-base sm:text-lg font-light max-w-2xl mx-auto leading-relaxed pt-8 italic drop-shadow">
+                「以『創作』，回應祂的『創造』。」<br class="hidden sm:inline">
+                <span class="text-slate-300 text-sm sm:text-base font-normal not-italic">融合電影敘事、感性配樂與奇幻靈魂，為世界打造療癒心靈的藝術作品。</span>
+            </p>
+
+            <!-- 4. 三大核心魔法徽章 -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-2xl mx-auto pt-8">
+                <div class="p-3.5 rounded-2xl bg-black/60 border border-gold/30 flex flex-col items-center gap-1.5 backdrop-blur-md hover:border-gold/60 transition-all shadow-lg">
+                    <i class="fa-solid fa-church text-gold text-base"></i>
+                    <span class="text-xs font-bold text-white">信仰基石</span>
+                    <span class="text-[10px] text-slate-400">Faith Inspired</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-black/60 border border-gold/30 flex flex-col items-center gap-1.5 backdrop-blur-md hover:border-gold/60 transition-all shadow-lg">
+                    <i class="fa-solid fa-compact-disc text-gold text-base animate-spin-slow"></i>
+                    <span class="text-xs font-bold text-white">聲效魔法</span>
+                    <span class="text-[10px] text-slate-400">Sound Magic</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-black/60 border border-gold/30 flex flex-col items-center gap-1.5 backdrop-blur-md hover:border-gold/60 transition-all shadow-lg">
+                    <i class="fa-solid fa-clapperboard text-gold text-base"></i>
+                    <span class="text-xs font-bold text-white">影音敘事</span>
+                    <span class="text-[10px] text-slate-400">Visual Story</span>
+                </div>
+            </div>
+
+            <!-- 5. 按鈕區塊 -->
+            <div class="pt-10 flex flex-wrap items-center justify-center gap-4">
+                <a href="https://instagram.com/whitemagic_studio" target="_blank" class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-gradient-to-r from-purple-600 via-pink-500 to-amber-500 text-white font-bold text-xs sm:text-sm shadow-xl shadow-pink-500/20 hover:scale-105 transition-all">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                    點按追蹤 @WHITEMAGIC_STUDIO
+                </a>
+                
+                <a href="#contact" class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-black/80 border border-gold/60 text-gold font-bold text-xs sm:text-sm hover:bg-gold hover:text-black hover:scale-105 transition-all shadow-lg backdrop-blur-md">
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                    洽詢與報價委託
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Founder Section -->
     <div class="relative max-w-7xl mx-auto px-6 py-20 z-10">
@@ -297,7 +289,7 @@
             <!-- Brand Mission Card -->
             <div class="lg:col-span-5 glass-card rounded-3xl p-6 sm:p-8 border border-gold/30 space-y-6 bg-gradient-to-b from-studio-card to-magic-purple/30 text-center relative overflow-hidden">
                 <div class="w-80 h-80 mx-auto mb-6 flex items-center justify-center">
-                  <img src="images/logo.png" alt="白魔法藝術工作室 Logo" class="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                    <img src="images/logo.png" alt="白魔法藝術工作室 Logo" class="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">
                 </div>
 
                 <div>
@@ -335,189 +327,180 @@
         </div>
     </div>
 
-    <!-- 配樂與音樂作品區塊 -->
-    <section id="music" class="relative py-24 px-6 max-w-7xl mx-auto z-10 scroll-mt-24">
-      <div class="text-center space-y-4 mb-16">
-        <span class="text-xs font-cinzel text-gold tracking-[0.3em] uppercase block">SOUND & MUSIC ALCHEMY</span>
-        <h2 class="text-3xl sm:text-5xl font-serif font-black text-gradient-gold">配樂與音樂作品</h2>
-        <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base font-light italic">
-          「音樂是我展現魔法的起點。在頻率與節奏的編織中，我捕捉那些微小而深刻的情緒片段。」
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- 卡片 1：《KAWAN》 -->
-        <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300">
-          <div class="space-y-4 text-center">
-            <div class="w-20 h-20 mx-auto rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center glow-gold">
-              <i class="fa-solid fa-compact-disc text-gold text-3xl animate-spin-slow"></i>
-            </div>
-            <h3 class="text-xl font-bold text-white">《KAWAN》主題曲</h3>
-            <p class="text-xs text-gold font-mono">與金馬男配角 曾敬驊 合作</p>
-            <p class="text-xs text-slate-300 leading-relaxed font-light">完成馬來西亞微電影《KAWAN》主題曲，以溫暖動人的民謠旋律勾勒深厚情感。</p>
-          </div>
-          <div class="pt-2">
-            <audio controls class="w-full h-10 rounded-lg">
-              <source src="images/kawan.wav" type="audio/wav">
-              您的瀏覽器不支援播放 WAV 音訊。
-            </audio>
-          </div>
-        </div>
-
-        <!-- 卡片 2：《起司蛋糕》 -->
-        <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300">
-          <div class="space-y-4 text-center">
-            <div class="w-20 h-20 mx-auto rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center glow-gold">
-              <i class="fa-solid fa-music text-gold text-3xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-white">《起司蛋糕》主題曲</h3>
-            <p class="text-xs text-gold font-mono">與資深女藝人 趙小僑 合作</p>
-            <p class="text-xs text-slate-300 leading-relaxed font-light">一同合作完成音樂劇微電影《起司蛋糕》主題曲，打造詭譎奇幻的音律。</p>
-          </div>
-          <div class="pt-2">
-            <audio controls class="w-full h-10 rounded-lg">
-              <source src="images/cheese-cake.wav" type="audio/wav">
-              您的瀏覽器不支援播放 WAV 音訊。
-            </audio>
-          </div>
-        </div>
-
-        <!-- 卡片 3：『賢不下萊』 -->
-<div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300">
-  <div class="space-y-4 text-center">
-    <div class="w-20 h-20 mx-auto rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center glow-gold">
-      <i class="fa-solid fa-guitar text-gold text-3xl"></i>
-    </div>
-    <h3 class="text-xl font-bold text-white">二重唱樂團『賢不下萊』</h3>
-    <p class="text-xs text-gold font-mono">與導演 李冠賢 共同組團</p>
-    <p class="text-xs text-slate-300 leading-relaxed font-light">共同創作多首原創音樂作品，推動當代民謠音樂復興與溫暖創作。</p>
-  </div>
-  <div class="pt-2">
-    <audio controls class="w-full h-10 rounded-lg">
-      <source src="images/xianbu-xialai.mp3" type="audio/mpeg">
-      您的瀏覽器不支援播放 MP3 音訊。
-    </audio>
-  </div>
-</div>
-
-    <!-- Music Section (布萊音樂工作室 & 代表作完整對齊版) -->
-<section id="music" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
-    
-    <!-- 頂部大卡片：品牌介紹與 3 首精選代表作 -->
-    <div class="glass-card rounded-3xl p-6 sm:p-10 border border-gold/30 bg-black/50 space-y-8 relative overflow-hidden">
+    <!-- Music Section (配樂與音樂作品區塊完整整合版) -->
+    <section id="music" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
         
-        <!-- 背景暗金色光暈 -->
-        <div class="absolute -top-24 -right-24 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="text-center space-y-4 mb-16">
+            <span class="text-xs font-cinzel text-gold tracking-[0.3em] uppercase block">SOUND & MUSIC ALCHEMY</span>
+            <h2 class="text-3xl sm:text-5xl font-serif font-black text-gradient-gold">配樂與音樂作品</h2>
+            <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base font-light italic">
+                「音樂是我展現魔法的起點。在頻率與節奏的編織中，我捕捉那些微小而深刻的情緒片段。」
+            </p>
+        </div>
 
-        <!-- 標題與 YouTube 按鈕列 -->
-        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border-b border-gold/20 pb-6">
-            <div class="space-y-2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-mono font-bold">
-                    <i class="fa-solid fa-compact-disc animate-spin-slow"></i> MUSIC BRAND INTEGRATION
+        <!-- 3 個音訊播放器卡片 -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- 卡片 1：《KAWAN》 -->
+            <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300">
+                <div class="space-y-4 text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center glow-gold">
+                        <i class="fa-solid fa-compact-disc text-gold text-3xl animate-spin-slow"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">《KAWAN》主題曲</h3>
+                    <p class="text-xs text-gold font-mono">與金馬男配角 曾敬驊 合作</p>
+                    <p class="text-xs text-slate-300 leading-relaxed font-light">完成馬來西亞微電影《KAWAN》主題曲，以溫暖動人的民謠旋律勾勒深厚情感。</p>
                 </div>
-                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">
-                    品牌經典典藏：布萊音樂工作室 <span class="text-gold text-lg font-normal block sm:inline">Bulai Music Studio</span>
-                </h3>
-                <p class="text-slate-300 text-xs sm:text-sm font-light max-w-3xl leading-relaxed">
-                    「布萊音樂工作室」現已正式併入白魔法藝術工作室宇宙。這裡沉澱了歷年原創聲學創作、LIVE 系列與奇幻風格配樂，持續為視覺與靈魂提供最純粹的音樂能量。
-                </p>
+                <div class="pt-2">
+                    <audio controls class="w-full h-10 rounded-lg">
+                        <source src="images/kawan.wav" type="audio/wav">
+                        您的瀏覽器不支援播放 WAV 音訊。
+                    </audio>
+                </div>
             </div>
 
-            <!-- YouTube 官方頻道按鈕 -->
-            <a href="https://www.youtube.com/@%E5%B8%83%E8%90%8A%E9%9F%B3%E6%A8%82%E5%B7%A5%E4%BD%9C%E5%AE%A4/featured" target="_blank" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs sm:text-sm shadow-xl shadow-red-600/30 hover:scale-105 transition-all shrink-0">
-                <i class="fa-brands fa-youtube text-lg"></i>
-                前往 YouTube 官方頻道
-            </a>
-        </div>
-
-        <!-- 3 首精選代表作 -->
-        <div class="space-y-4">
-            <h4 class="text-sm font-bold text-gold font-mono tracking-wider uppercase flex items-center gap-2">
-                <i class="fa-solid fa-star text-xs"></i> 核心代表作試聽 (Top Picks)
-            </h4>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
-                
-                <!-- 曲目 1 -->
-                <a href="https://youtu.be/o6LXLmKIWYs?si=TgWLLXYT18Jec2pM" target="_blank" class="p-5 rounded-2xl bg-black/60 border border-gold/20 hover:border-gold/60 transition-all block group hover:scale-[1.02] duration-300">
-                    <div class="flex items-start justify-between">
-                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">奇幻配樂</span>
-                        <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors text-base"></i>
+            <!-- 卡片 2：《起司蛋糕》 -->
+            <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300">
+                <div class="space-y-4 text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center glow-gold">
+                        <i class="fa-solid fa-music text-gold text-3xl"></i>
                     </div>
-                    <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】 微電影-起司蛋糕 插曲 鼠行調</h5>
-                    <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
-                        以弦樂撥奏詮釋老鼠人偷偷摸摸的狡詐感，充滿奇幻特色。
-                    </p>
-                    <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
-                        線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </span>
-                </a>
+                    <h3 class="text-xl font-bold text-white">《起司蛋糕》主題曲</h3>
+                    <p class="text-xs text-gold font-mono">與資深女藝人 趙小僑 合作</p>
+                    <p class="text-xs text-slate-300 leading-relaxed font-light">一同合作完成音樂劇微電影《起司蛋糕》主題曲，打造詭譎奇幻的音律。</p>
+                </div>
+                <div class="pt-2">
+                    <audio controls class="w-full h-10 rounded-lg">
+                        <source src="images/cheese-cake.wav" type="audio/wav">
+                        您的瀏覽器不支援播放 WAV 音訊。
+                    </audio>
+                </div>
+            </div>
 
-                <!-- 曲目 2 -->
-                <a href="https://youtu.be/0xtum6rAMtU?si=0nR65QlKjdUvuyk8" target="_blank" class="p-5 rounded-2xl bg-black/60 border border-gold/20 hover:border-gold/60 transition-all block group hover:scale-[1.02] duration-300">
-                    <div class="flex items-start justify-between">
-                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">浪漫配樂</span>
-                        <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors text-base"></i>
+            <!-- 卡片 3：『賢不下萊』 -->
+            <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300">
+                <div class="space-y-4 text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center glow-gold">
+                        <i class="fa-solid fa-guitar text-gold text-3xl"></i>
                     </div>
-                    <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】微電影-此刻 主題曲</h5>
-                    <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
-                        用鋼琴最純潔乾淨的旋律，詮釋真摯的愛情與永恆約定。
-                    </p>
-                    <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
-                        線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </span>
-                </a>
-
-                <!-- 曲目 3 -->
-                <a href="https://youtu.be/mkTX3bS84V8?si=sj_ta0naWMeVJZVl" target="_blank" class="p-5 rounded-2xl bg-black/60 border border-gold/20 hover:border-gold/60 transition-all block group hover:scale-[1.02] duration-300">
-                    <div class="flex items-start justify-between">
-                        <span class="text-[10px] font-mono px-2.5 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">弦樂配樂</span>
-                        <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors text-base"></i>
-                    </div>
-                    <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】微電影-來不及說的故事 主題曲</h5>
-                    <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
-                        大提琴獨奏呈現內心糾結與情感波瀾，極具渲染力。
-                    </p>
-                    <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
-                        線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </span>
-                </a>
-
+                    <h3 class="text-xl font-bold text-white">二重唱樂團『賢不下萊』</h3>
+                    <p class="text-xs text-gold font-mono">與導演 李冠賢 共同組團</p>
+                    <p class="text-xs text-slate-300 leading-relaxed font-light">共同創作多首原創音樂作品，推動當代民謠音樂復興與溫暖創作。</p>
+                </div>
+                <div class="pt-2">
+                    <audio controls class="w-full h-10 rounded-lg">
+                        <source src="images/xianbu-xialai.mp3" type="audio/mpeg">
+                        您的瀏覽器不支援播放 MP3 音訊。
+                    </audio>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- 底部卡片：配樂經歷清單 -->
-    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-gold/20 bg-black/50 mt-8 space-y-4">
-        <h3 class="text-base sm:text-lg font-bold text-gold flex items-center gap-2 border-b border-gold/20 pb-3">
-            <i class="fa-solid fa-list-check"></i> 配樂與音樂經歷 (短片作品與預告)
-        </h3>
-        
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 text-xs text-slate-300">
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-丟你魯味</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-彼岸</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-倒模</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-區間車</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-弒父</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-被害人</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-此刻</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-訪客</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-起司蛋糕</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-天賦</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-半糖微冰</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-白襯衫</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-紳士帽</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-KAWAN</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">四分之一的心跳預告</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">偽預告-我的福州話時代</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">偽預告-聽說詩巫有那個</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">搞笑短劇-MCO行動 今天你Stay Home了嗎</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-來不及說的故事</div>
-            <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">後甲教會70週年主題曲-獻予祢的歌</div>
+        <!-- 頂部大卡片：品牌介紹與 3 首精選代表作 -->
+        <div class="glass-card rounded-3xl p-6 sm:p-10 border border-gold/30 bg-black/50 space-y-8 relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border-b border-gold/20 pb-6">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-mono font-bold">
+                        <i class="fa-solid fa-compact-disc animate-spin-slow"></i> MUSIC BRAND INTEGRATION
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">
+                        品牌經典典藏：布萊音樂工作室 <span class="text-gold text-lg font-normal block sm:inline">Bulai Music Studio</span>
+                    </h3>
+                    <p class="text-slate-300 text-xs sm:text-sm font-light max-w-3xl leading-relaxed">
+                        「布萊音樂工作室」現已正式併入白魔法藝術工作室宇宙。這裡沉澱了歷年原創聲學創作、LIVE 系列與奇幻風格配樂，持續為視覺與靈魂提供最純粹的音樂能量。
+                    </p>
+                </div>
+
+                <a href="https://www.youtube.com/@%E5%B8%83%E8%90%8A%E9%9F%B3%E6%A8%82%E5%B7%A5%E4%BD%9C%E5%AE%A4/featured" target="_blank" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs sm:text-sm shadow-xl shadow-red-600/30 hover:scale-105 transition-all shrink-0">
+                    <i class="fa-brands fa-youtube text-lg"></i>
+                    前往 YouTube 官方頻道
+                </a>
+            </div>
+
+            <!-- 3 首精選代表作 -->
+            <div class="space-y-4">
+                <h4 class="text-sm font-bold text-gold font-mono tracking-wider uppercase flex items-center gap-2">
+                    <i class="fa-solid fa-star text-xs"></i> 核心代表作試聽 (Top Picks)
+                </h4>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+                    <a href="https://youtu.be/o6LXLmKIWYs?si=TgWLLXYT18Jec2pM" target="_blank" class="p-5 rounded-2xl bg-black/60 border border-gold/20 hover:border-gold/60 transition-all block group hover:scale-[1.02] duration-300">
+                        <div class="flex items-start justify-between">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">奇幻配樂</span>
+                            <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors text-base"></i>
+                        </div>
+                        <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】 微電影-起司蛋糕 插曲 鼠行調</h5>
+                        <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
+                            以弦樂撥奏詮釋老鼠人偷偷摸摸的狡詐感，充滿奇幻特色。
+                        </p>
+                        <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
+                            線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </span>
+                    </a>
+
+                    <a href="https://youtu.be/0xtum6rAMtU?si=0nR65QlKjdUvuyk8" target="_blank" class="p-5 rounded-2xl bg-black/60 border border-gold/20 hover:border-gold/60 transition-all block group hover:scale-[1.02] duration-300">
+                        <div class="flex items-start justify-between">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">浪漫配樂</span>
+                            <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors text-base"></i>
+                        </div>
+                        <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】微電影-此刻 主題曲</h5>
+                        <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
+                            用鋼琴最純潔乾淨的旋律，詮釋真摯的愛情與永恆約定。
+                        </p>
+                        <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
+                            線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </span>
+                    </a>
+
+                    <a href="https://youtu.be/mkTX3bS84V8?si=sj_ta0naWMeVJZVl" target="_blank" class="p-5 rounded-2xl bg-black/60 border border-gold/20 hover:border-gold/60 transition-all block group hover:scale-[1.02] duration-300">
+                        <div class="flex items-start justify-between">
+                            <span class="text-[10px] font-mono px-2.5 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">弦樂配樂</span>
+                            <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors text-base"></i>
+                        </div>
+                        <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】微電影-來不及說的故事 主題曲</h5>
+                        <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
+                            大提琴獨奏呈現內心糾結與情感波瀾，極具渲染力。
+                        </p>
+                        <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
+                            線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
 
-</section>
+        <!-- 底部卡片：配樂經歷清單 -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 border border-gold/20 bg-black/50 mt-8 space-y-4">
+            <h3 class="text-base sm:text-lg font-bold text-gold flex items-center gap-2 border-b border-gold/20 pb-3">
+                <i class="fa-solid fa-list-check"></i> 配樂與音樂經歷 (短片作品與預告)
+            </h3>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 text-xs text-slate-300">
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-丟你魯味</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-彼岸</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-倒模</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-區間車</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-弒父</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-被害人</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-此刻</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-訪客</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-起司蛋糕</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-天賦</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-半糖微冰</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-白襯衫</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-紳士帽</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-KAWAN</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">四分之一的心跳預告</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">偽預告-我的福州話時代</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">偽預告-聽說詩巫有那個</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">搞笑短劇-MCO行動 今天你Stay Home了嗎</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">微電影-來不及說的故事</div>
+                <div class="p-2.5 rounded-xl bg-black/60 border border-slate-800 hover:border-gold/50 transition-all font-medium text-center">後甲教會70週年主題曲-獻予祢的歌</div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- 導演作品區塊 -->
     <section id="director" class="relative py-24 px-6 max-w-7xl mx-auto z-10 scroll-mt-24">
@@ -725,7 +708,7 @@
             </div>
 
           </div>
- 
+
             <!-- Novel Pitch Note -->
             <div class="text-center bg-black/40 p-4 rounded-2xl border border-gold/20 text-xs text-slate-300 mt-8">
                 ✨ 此系列作品開放試閱中，如出版商或影視改編團隊感興趣，<b>歡迎私訊聯絡作者 榆軒 Brian</b>。
@@ -733,411 +716,386 @@
         </div>
     </section>
 
-   <!-- Event Highlights Section -->
-<section id="events" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
-    <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="text-xs font-cinzel text-gold tracking-widest uppercase block">EVENT HIGHLIGHTS & REELS</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-gradient-gold mt-1 mb-3">活動紀錄作品與快播快剪</h2>
-        <p class="text-slate-300 text-sm sm:text-base font-light italic">
-            「在快節奏的活動現場，我可以證明影像的靈魂不在於器材的規格，而在於導演的眼界。與校園同步，以藝術回應祂的呼召。」
-        </p>
-    </div>
-
-    <!-- 主打大卡片：2026 嘉南中夏回顧影片 -->
-    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-gold/30 mb-8 bg-gradient-to-r from-studio-card via-black to-studio-card">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-            <div class="lg:col-span-7">
-                <div class="relative w-full h-56 sm:h-72 rounded-2xl bg-black border border-gold/30 overflow-hidden group">
-                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/0QrGn31zALs/hqdefault.jpg');"></div>
-                    <div class="absolute inset-0 bg-black/50"></div>
-                    
-                    <!-- 點擊彈窗播放《東遊趣》 -->
-                    <button onclick="openVideoModal('【2026 嘉南中夏回顧影片】東遊趣 - 和耶穌一起過日子', '與校園同步，以藝術回應祂的呼召。全程採用手機進行拍攝與剪輯，快速記錄營會熱情與感動瞬間。', 'https://www.youtube.com/embed/0QrGn31zALs')" class="absolute inset-0 flex items-center justify-center group-hover:scale-105 transition-transform">
-                        <div class="w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center text-2xl shadow-2xl">
-                            <i class="fa-solid fa-play ml-1"></i>
-                        </div>
-                    </button>
-                </div>
-            </div>
-            <div class="lg:col-span-5 space-y-4">
-                <span class="px-3 py-1 rounded-full bg-gold/20 text-gold text-xs font-bold border border-gold/40">嘉南校園福音團契</span>
-                <h3 class="text-2xl font-bold text-white">【2026 嘉南中夏回顧影片】東遊趣 - 和耶穌一起過日子</h3>
-                <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
-                    在學生營會的快播快剪作品中，全程採用手機進行拍攝與剪輯。憑藉配樂師對情感節奏的敏銳與導演的敘事直覺，打造最溫暖的生命回顧。
-                </p>
-                <div class="p-3 rounded-xl bg-black/50 border border-gold/20 text-xs text-gold font-semibold">
-                    ✨ 榮耀我老大的名！最短時間內留存最美好的見證。
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 下方 4 張營會快播快剪卡片 -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        
-        <!-- 卡片 1：2025 嘉南中學夏令營 -->
-        <button onclick="openVideoModal('2025 嘉南中學夏令營《南國事件簿》', '尋找上帝所在的真實軌跡，紀錄青年熱血奔赴的信仰時刻。', 'https://www.youtube.com/embed/2BZ89Wwn2j4')" class="glass-card rounded-2xl p-4 border border-gold/20 hover:border-gold transition-all text-left space-y-2 group">
-            <div class="h-32 rounded-xl bg-black/60 border border-gold/20 flex items-center justify-center text-gold text-2xl font-bold relative overflow-hidden bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/2BZ89Wwn2j4/hqdefault.jpg');">
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
-                    <i class="fa-solid fa-play text-red-500 group-hover:scale-125 transition-transform"></i>
-                </div>
-            </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-gold transition-colors">2025 嘉南中學夏令營</h4>
-            <p class="text-xs text-slate-400">《南國事件簿》尋找上帝所在</p>
-        </button>
-
-        <!-- 卡片 2：2025 嘉南中學冬令營 -->
-        <button onclick="openVideoModal('2025 嘉南中學冬令營《God Message 999+》', '解密屬天訊息，捕捉營會互動與感動流露的高光片段。', 'https://www.youtube.com/embed/IpuhRO2py-c')" class="glass-card rounded-2xl p-4 border border-gold/20 hover:border-gold transition-all text-left space-y-2 group">
-            <div class="h-32 rounded-xl bg-black/60 border border-gold/20 flex items-center justify-center text-gold text-2xl font-bold relative overflow-hidden bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/IpuhRO2py-c/hqdefault.jpg');">
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
-                    <i class="fa-solid fa-play text-red-500 group-hover:scale-125 transition-transform"></i>
-                </div>
-            </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-gold transition-colors">2025 嘉南中學冬令營</h4>
-            <p class="text-xs text-slate-400">《God Message 999+》</p>
-        </button>
-
-        <!-- 卡片 3：2026 後甲兒童暑期營會 -->
-        <button onclick="openVideoModal('2026 後甲兒童暑期營會 AKGA 金愛管理財營', '活潑有趣的兒童理財營快剪，紀錄純真笑容與生命學習。', 'https://www.youtube.com/embed/RVNcq8r19Fw')" class="glass-card rounded-2xl p-4 border border-gold/20 hover:border-gold transition-all text-left space-y-2 group">
-            <div class="h-32 rounded-xl bg-black/60 border border-gold/20 flex items-center justify-center text-gold text-2xl font-bold relative overflow-hidden bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/RVNcq8r19Fw/hqdefault.jpg');">
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
-                    <i class="fa-solid fa-play text-red-500 group-hover:scale-125 transition-transform"></i>
-                </div>
-            </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-gold transition-colors">2026 後甲兒童暑期營會</h4>
-            <p class="text-xs text-slate-400">AKGA 金愛管理財營回顧</p>
-        </button>
-
-        <!-- 卡片 4：2026 後甲學生暑期營會 -->
-        <button onclick="openVideoModal('2026 後甲學生暑期營會', '紀錄後甲與繁華教會一同體驗服事兒童與社區關懷，真正跨出福音的步伐！', 'https://www.youtube.com/embed/EdSBEkb9aZI')" class="glass-card rounded-2xl p-4 border border-gold/20 hover:border-gold transition-all text-left space-y-2 group">
-            <div class="h-32 rounded-xl bg-black/60 border border-gold/20 flex items-center justify-center text-gold text-2xl font-bold relative overflow-hidden bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/EdSBEkb9aZI/hqdefault.jpg');">
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
-                    <i class="fa-solid fa-play text-red-500 group-hover:scale-125 transition-transform"></i>
-                </div>
-            </div>
-            <h4 class="text-sm font-bold text-white group-hover:text-gold transition-colors">2026 後甲學生暑期營會</h4>
-            <p class="text-xs text-slate-400">友善拾光 feat.繁華教會</p>
-        </button>
-
-    </div>
-</section>
-
-   <!-- Social Media Section (實體截圖 + 三連排版畫廊全功能版) -->
-<section id="social" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
-    <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="text-xs font-cinzel text-gold tracking-widest uppercase block">SOCIAL MEDIA MAGIC</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-gradient-magic mt-1 mb-3">社群媒體魔法排版與短影音</h2>
-        <p class="text-slate-300 text-sm sm:text-base font-light">
-            「每一個活動紀錄再以短影音形式上 Reels，更靈活增加觸及率！結合實戰數據分析與『白魔法』溫柔敘事，種下正向能量種子。」
-        </p>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        
-        <!-- 左側：擬真 IG 手機播放器（播放你的爆款 Reels） -->
-        <div class="lg:col-span-5 flex justify-center">
-            <a href="https://www.instagram.com/p/DSZzvUID5FP/" target="_blank" class="w-full max-w-xs glass-card rounded-[40px] p-4 border-2 border-gold/40 shadow-2xl shadow-gold/10 relative block group hover:scale-[1.02] transition-transform duration-300">
-                <!-- 手機頂部聽筒膠囊 -->
-                <div class="w-28 h-4 bg-black rounded-full mx-auto mb-3 border border-slate-800"></div>
-                
-                <!-- 手機螢幕區域 -->
-                <div class="bg-slate-950 rounded-[28px] p-3 border border-slate-800 text-white space-y-3 relative overflow-hidden">
-                    
-                    <!-- IG 帳號標頭 -->
-                    <div class="flex items-center justify-between text-xs px-1">
-                        <div class="flex items-center gap-2">
-                            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-amber-400 to-purple-600 p-[1.5px]">
-                                <img src="images/logo.png" alt="Avatar" class="w-full h-full object-cover rounded-full bg-black">
-                            </div>
-                            <span class="font-bold text-gold text-[11px]">@whitemagic_studio</span>
-                        </div>
-                        <i class="fa-brands fa-instagram text-base text-pink-500"></i>
-                    </div>
-
-                    <!-- 實體 Reels 封面截圖區 (reels-cover.jpg) -->
-                    <div class="relative w-full aspect-[9/16] rounded-2xl overflow-hidden border border-gold/30 shadow-inner group">
-                        <img src="images/reels-cover.jpg" alt="Reels 實體截圖" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop'">
-                        
-                        <!-- 播放遮罩與點擊引導 -->
-                        <div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center gap-2 group-hover:bg-black/10 transition-all">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-lg ml-0.5"></i>
-                            </div>
-                            <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-gold border border-gold/30">
-                                點擊直達 IG 觀看 Reels
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- 實戰成效數據標籤 -->
-                    <div class="grid grid-cols-2 gap-2 text-center text-[10px]">
-                        <div class="bg-gradient-to-br from-purple-900/60 to-black p-2 rounded-xl border border-purple-500/30">
-                            <span class="block font-black text-amber-300 text-sm">1.7萬+</span> 觸及觀看
-                        </div>
-                        <div class="bg-gradient-to-br from-purple-900/60 to-black p-2 rounded-xl border border-purple-500/30">
-                            <span class="block font-black text-amber-300 text-sm">18.6萬+</span> 曝光轉換
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- 右側：三大核心服務 ＋ 三連九宮格展示畫廊 -->
-        <div class="lg:col-span-7 space-y-4">
-            
-            <!-- 卡片 1：三連一式美學排版 (含 3 張實體截圖展示) -->
-            <div class="glass-card rounded-2xl p-6 border border-gold/20 space-y-4 hover:border-gold/50 transition-all">
-                <div class="flex gap-4 items-start">
-                    <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-xl flex-shrink-0">
-                        <i class="fa-solid fa-table-cells"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white mb-1">三連一式版面設計 & 美學排版</h4>
-                        <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
-                            為品牌與教會帳號量身規劃精選分類圖示、風格一致的三連版面與美學排版，塑造無可取代的專業質感。
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 實體 3 張三連排版圖展示區 (ig-grid-1.jpg / ig-grid-2.jpg / ig-grid-3.jpg) -->
-                <div class="grid grid-cols-3 gap-2 pt-2">
-                    <a href="https://www.instagram.com/houjiach/" target="_blank" class="aspect-square rounded-xl bg-slate-800 overflow-hidden border border-gold/20 group relative block">
-                        <img src="images/ig-grid-1.jpg" alt="IG 排版截圖 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=400&auto=format&fit=crop'">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-xs font-bold">
-                            <i class="fa-brands fa-instagram text-base"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/ashs.nutn_fellowship/" target="_blank" class="aspect-square rounded-xl bg-slate-800 overflow-hidden border border-gold/20 group relative block">
-                        <img src="images/ig-grid-2.jpg" alt="IG 排版截圖 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=400&auto=format&fit=crop'">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-xs font-bold">
-                            <i class="fa-brands fa-instagram text-base"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/p/DasSsN3B2Co/" target="_blank" class="aspect-square rounded-xl bg-slate-800 overflow-hidden border border-gold/20 group relative block">
-                        <img src="images/ig-grid-3.jpg" alt="IG 排版截圖 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=400&auto=format&fit=crop'">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-xs font-bold">
-                            <i class="fa-brands fa-instagram text-base"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- 卡片 2：短影音企劃設計與趨勢剪輯 -->
-            <div class="glass-card rounded-2xl p-6 border border-gold/20 flex gap-4 items-start hover:border-gold/50 transition-all">
-                <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-xl flex-shrink-0">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-1">短影音企劃設計與趨勢剪輯</h4>
-                    <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
-                        從腳本企劃、現場拍攝到聽覺對點剪輯，精準掌握前 3 秒黃金留存率，將信仰與品牌精神自然融入社群熱門話題。
-                    </p>
-                </div>
-            </div>
-
-            <!-- 卡片 3：福音與品牌視覺數據化轉化 -->
-            <div class="glass-card rounded-2xl p-6 border border-gold/20 flex gap-4 items-start hover:border-gold/50 transition-all">
-                <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-xl flex-shrink-0">
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-1">福音與品牌視覺數據化轉化</h4>
-                    <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
-                        曾經深耕網紅電商團隊三年的實戰經驗，深刻理解社群脈絡。視覺包裝不只是呈現美感，更是數據轉化與品牌影響力的橋樑。
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-  <!-- Church Video Course Section (帶課程範例連結升級版) -->
-<section id="courses" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
-    <div class="glass-card rounded-3xl p-8 sm:p-12 border border-gold/40 bg-gradient-to-br from-amber-950/30 via-studio-card to-purple-950/30 relative overflow-hidden">
-        
-        <!-- 背景星光的金色光暈 -->
-        <div class="absolute -top-24 -right-24 w-80 h-80 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <!-- 區塊標頭 -->
+    <!-- Event Highlights Section -->
+    <section id="events" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
         <div class="text-center max-w-3xl mx-auto mb-12">
-            <span class="text-xs font-cinzel text-gold tracking-widest uppercase block">GOSPEL & MEDIA MINISTRY</span>
-            <h2 class="text-3xl sm:text-5xl font-serif font-black text-gradient-gold mt-1 mb-3">【新媒體時代的福音推手】系列課程</h2>
-            <p class="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
-                結合實務影音技能與福音傳播戰略，幫助教會將感動轉化為高觸及社群影響力。
+            <span class="text-xs font-cinzel text-gold tracking-widest uppercase block">EVENT HIGHLIGHTS & REELS</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gradient-gold mt-1 mb-3">活動紀錄作品與快播快剪</h2>
+            <p class="text-slate-300 text-sm sm:text-base font-light italic">
+                「在快節奏的活動現場，我可以證明影像的靈魂不在於器材的規格，而在於導演的眼界。與校園同步，以藝術回應祂的呼召。」
             </p>
         </div>
 
-        <!-- 🔥 搶先預約：免費初階體驗課程 Banner -->
-        <div class="mb-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-amber-500/20 via-purple-900/40 to-black border-2 border-gold/60 shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 group">
-            <div class="space-y-3 text-center md:text-left">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/20 border border-gold/50 text-gold text-xs font-bold">
-                    <i class="fa-solid fa-gift animate-bounce text-amber-300"></i> 免費體驗方案 ‧ 名額有限
+        <!-- 主打大卡片：2026 嘉南中夏回顧影片 -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 border border-gold/30 mb-8 bg-gradient-to-r from-studio-card via-black to-studio-card">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                <div class="lg:col-span-7">
+                    <div class="relative w-full h-56 sm:h-72 rounded-2xl bg-black border border-gold/30 overflow-hidden group">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/0QrGn31zALs/hqdefault.jpg');"></div>
+                        <div class="absolute inset-0 bg-black/50"></div>
+                        
+                        <button onclick="openVideoModal('【2026 嘉南中夏回顧影片】東遊趣 - 和耶穌一起過日子', '與校園同步，以藝術回應祂的呼召。全程採用手機進行拍攝與剪輯，快速記錄營會熱情與感動瞬間。', 'https://www.youtube.com/embed/0QrGn31zALs')" class="absolute inset-0 flex items-center justify-center group-hover:scale-105 transition-transform">
+                            <div class="w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center text-2xl shadow-2xl">
+                                <i class="fa-solid fa-play ml-1"></i>
+                            </div>
+                        </button>
+                    </div>
                 </div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-white">
-                    初階信仰短影音入門講座 <span class="text-gold text-lg font-normal">（1堂體驗課）</span>
-                </h3>
-                <p class="text-slate-300 text-xs sm:text-sm font-light max-w-2xl leading-relaxed">
-                    專為教會/宣教同工設計！快速釐清短影音核心邏輯、器材準備與福音轉化策略，適合想嘗試轉型新媒體的團隊搶先預約。
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="px-3 py-1 rounded-full bg-gold/20 text-gold text-xs font-bold border border-gold/40">嘉南校園福音團契</span>
+                    <h3 class="text-2xl font-bold text-white">【2026 嘉南中夏回顧影片】東遊趣 - 和耶穌一起過日子</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
+                        在學生營會的快播快剪作品中，全程採用手機進行拍攝與剪輯。憑藉配樂師對情感節奏的敏銳與導演的敘事直覺，打造最溫暖的生命回顧。
+                    </p>
+                    <div class="p-3 rounded-xl bg-black/50 border border-gold/20 text-xs text-gold font-semibold">
+                        ✨ 榮耀我老大的名！最短時間內留存最美好的見證。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 下方 4 張營會快播快剪卡片 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- 卡片 1：2025 嘉南中學夏令營 -->
+            <button onclick="openVideoModal('2025 嘉南中學夏令營《南國事件簿》', '尋找上帝所在的真實軌跡，紀錄青年熱血奔赴的信仰時刻。', 'https://www.youtube.com/embed/2BZ89Wwn2j4')" class="glass-card rounded-2xl p-4 border border-gold/20 hover:border-gold transition-all text-left space-y-2 group">
+                <div class="h-32 rounded-xl bg-black/60 border border-gold/20 flex items-center justify-center text-gold text-2xl font-bold relative overflow-hidden bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/2BZ89Wwn2j4/hqdefault.jpg');">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
+                        <i class="fa-solid fa-play text-red-500 group-hover:scale-125 transition-transform"></i>
+                    </div>
+                </div>
+                <h4 class="text-sm font-bold text-white group-hover:text-gold transition-colors">2025 嘉南中學夏令營</h4>
+                <p class="text-xs text-slate-400">《南國事件簿》尋找上帝所在</p>
+            </button>
+
+            <!-- 卡片 2：2025 嘉南中學冬令營 -->
+            <button onclick="openVideoModal('2025 嘉南中學冬令營《God Message 999+》', '解密屬天訊息，捕捉營會互動與感動流露的高光片段。', 'https://www.youtube.com/embed/IpuhRO2py-c')" class="glass-card rounded-2xl p-4 border border-gold/20 hover:border-gold transition-all text-left space-y-2 group">
+                <div class="h-32 rounded-xl bg-black/60 border border-gold/20 flex items-center justify-center text-gold text-2xl font-bold relative overflow-hidden bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/IpuhRO2py-c/hqdefault.jpg');">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
+                        <i class="fa-solid fa-play text-red-500 group-hover:scale-125 transition-transform"></i>
+                    </div>
+                </div>
+                <h4 class="text-sm font-bold text-white group-hover:text-gold transition-colors">2025 嘉南中學冬令營</h4>
+                <p class="text-xs text-slate-400">《God Message 999+》</p>
+            </button>
+
+            <!-- 卡片 3：2026 後甲兒童暑期營會 -->
+            <button onclick="openVideoModal('2026 後甲兒童暑期營會 AKGA 金愛管理財營', '活潑有趣的兒童理財營快剪，紀錄純真笑容與生命學習。', 'https://www.youtube.com/embed/RVNcq8r19Fw')" class="glass-card rounded-2xl p-4 border border-gold/20 hover:border-gold transition-all text-left space-y-2 group">
+                <div class="h-32 rounded-xl bg-black/60 border border-gold/20 flex items-center justify-center text-gold text-2xl font-bold relative overflow-hidden bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/RVNcq8r19Fw/hqdefault.jpg');">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
+                        <i class="fa-solid fa-play text-red-500 group-hover:scale-125 transition-transform"></i>
+                    </div>
+                </div>
+                <h4 class="text-sm font-bold text-white group-hover:text-gold transition-colors">2026 後甲兒童暑期營會</h4>
+                <p class="text-xs text-slate-400">AKGA 金愛管理財營回顧</p>
+            </button>
+
+            <!-- 卡片 4：2026 後甲學生暑期營會 -->
+            <button onclick="openVideoModal('2026 後甲學生暑期營會', '紀錄後甲與繁華教會一同體驗服事兒童與社區關懷，真正跨出福音的步伐！', 'https://www.youtube.com/embed/EdSBEkb9aZI')" class="glass-card rounded-2xl p-4 border border-gold/20 hover:border-gold transition-all text-left space-y-2 group">
+                <div class="h-32 rounded-xl bg-black/60 border border-gold/20 flex items-center justify-center text-gold text-2xl font-bold relative overflow-hidden bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/EdSBEkb9aZI/hqdefault.jpg');">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
+                        <i class="fa-solid fa-play text-red-500 group-hover:scale-125 transition-transform"></i>
+                    </div>
+                </div>
+                <h4 class="text-sm font-bold text-white group-hover:text-gold transition-colors">2026 後甲學生暑期營會</h4>
+                <p class="text-xs text-slate-400">友善拾光 feat.繁華教會</p>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Social Media Section (實體截圖 + 三連排版畫廊全功能版) -->
+    <section id="social" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-cinzel text-gold tracking-widest uppercase block">SOCIAL MEDIA MAGIC</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gradient-magic mt-1 mb-3">社群媒體魔法排版與短影音</h2>
+            <p class="text-slate-300 text-sm sm:text-base font-light">
+                「每一個活動紀錄再以短影音形式上 Reels，更靈活增加觸及率！結合實戰數據分析與『白魔法』溫柔敘事，種下正向能量種子。」
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- 左側：擬真 IG 手機播放器（播放你的爆款 Reels） -->
+            <div class="lg:col-span-5 flex justify-center">
+                <a href="https://www.instagram.com/p/DSZzvUID5FP/" target="_blank" class="w-full max-w-xs glass-card rounded-[40px] p-4 border-2 border-gold/40 shadow-2xl shadow-gold/10 relative block group hover:scale-[1.02] transition-transform duration-300">
+                    <div class="w-28 h-4 bg-black rounded-full mx-auto mb-3 border border-slate-800"></div>
+                    
+                    <div class="bg-slate-950 rounded-[28px] p-3 border border-slate-800 text-white space-y-3 relative overflow-hidden">
+                        <div class="flex items-center justify-between text-xs px-1">
+                            <div class="flex items-center gap-2">
+                                <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-amber-400 to-purple-600 p-[1.5px]">
+                                    <img src="images/logo.png" alt="Avatar" class="w-full h-full object-cover rounded-full bg-black">
+                                </div>
+                                <span class="font-bold text-gold text-[11px]">@whitemagic_studio</span>
+                            </div>
+                            <i class="fa-brands fa-instagram text-base text-pink-500"></i>
+                        </div>
+
+                        <div class="relative w-full aspect-[9/16] rounded-2xl overflow-hidden border border-gold/30 shadow-inner group">
+                            <img src="images/reels-cover.jpg" alt="Reels 實體截圖" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop'">
+                            
+                            <div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center gap-2 group-hover:bg-black/10 transition-all">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                                </div>
+                                <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-gold border border-gold/30">
+                                    點擊直達 IG 觀看 Reels
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2 text-center text-[10px]">
+                            <div class="bg-gradient-to-br from-purple-900/60 to-black p-2 rounded-xl border border-purple-500/30">
+                                <span class="block font-black text-amber-300 text-sm">1.7萬+</span> 觸及觀看
+                            </div>
+                            <div class="bg-gradient-to-br from-purple-900/60 to-black p-2 rounded-xl border border-purple-500/30">
+                                <span class="block font-black text-amber-300 text-sm">18.6萬+</span> 曝光轉換
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 右側：三大核心服務 ＋ 三連九宮格展示畫廊 -->
+            <div class="lg:col-span-7 space-y-4">
+                <div class="glass-card rounded-2xl p-6 border border-gold/20 space-y-4 hover:border-gold/50 transition-all">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-xl flex-shrink-0">
+                            <i class="fa-solid fa-table-cells"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-white mb-1">三連一式版面設計 & 美學排版</h4>
+                            <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
+                                為品牌與教會帳號量身規劃精選分類圖示、風格一致的三連版面與美學排版，塑造無可取代的專業質感。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 pt-2">
+                        <a href="https://www.instagram.com/houjiach/" target="_blank" class="aspect-square rounded-xl bg-slate-800 overflow-hidden border border-gold/20 group relative block">
+                            <img src="images/ig-grid-1.jpg" alt="IG 排版截圖 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=400&auto=format&fit=crop'">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-xs font-bold">
+                                <i class="fa-brands fa-instagram text-base"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/ashs.nutn_fellowship/" target="_blank" class="aspect-square rounded-xl bg-slate-800 overflow-hidden border border-gold/20 group relative block">
+                            <img src="images/ig-grid-2.jpg" alt="IG 排版截圖 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=400&auto=format&fit=crop'">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-xs font-bold">
+                                <i class="fa-brands fa-instagram text-base"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/p/DasSsN3B2Co/" target="_blank" class="aspect-square rounded-xl bg-slate-800 overflow-hidden border border-gold/20 group relative block">
+                            <img src="images/ig-grid-3.jpg" alt="IG 排版截圖 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=400&auto=format&fit=crop'">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-xs font-bold">
+                                <i class="fa-brands fa-instagram text-base"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 border border-gold/20 flex gap-4 items-start hover:border-gold/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-xl flex-shrink-0">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-1">短影音企劃設計與趨勢剪輯</h4>
+                        <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
+                            從腳本企劃、現場拍攝到聽覺對點剪輯，精準掌握前 3 秒黃金留存率，將信仰與品牌精神自然融入社群熱門話題。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 border border-gold/20 flex gap-4 items-start hover:border-gold/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-xl flex-shrink-0">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-1">福音與品牌視覺數據化轉化</h4>
+                        <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
+                            曾經深耕網紅電商團隊三年的實戰經驗，深刻理解社群脈絡。視覺包裝不只是呈現美感，更是數據轉化與品牌影響力的橋樑。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Church Video Course Section (帶課程範例連結升級版) -->
+    <section id="courses" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 border border-gold/40 bg-gradient-to-br from-amber-950/30 via-studio-card to-purple-950/30 relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-80 h-80 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-cinzel text-gold tracking-widest uppercase block">GOSPEL & MEDIA MINISTRY</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-black text-gradient-gold mt-1 mb-3">【新媒體時代的福音推手】系列課程</h2>
+                <p class="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+                    結合實務影音技能與福音傳播戰略，幫助教會將感動轉化為高觸及社群影響力。
                 </p>
             </div>
-            
-            <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-black font-black text-sm tracking-wider hover:scale-105 transition-all shadow-xl shadow-gold/20 shrink-0 flex items-center gap-2">
-                <i class="fa-solid fa-calendar-check text-base"></i> 搶先預約免費體驗
-            </a>
-        </div>
 
-        <!-- 💎 三大付費委託專業課程卡片 -->
-        <div class="space-y-6">
-            <div class="text-center md:text-left">
-                <h4 class="text-sm font-bold text-gold font-mono tracking-wider uppercase flex items-center justify-center md:justify-start gap-2">
-                    <i class="fa-solid fa-crown text-xs"></i> 付費委託深度實戰專業課程系列 (Professional Courses)
-                </h4>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 🔥 搶先預約：免費初階體驗課程 Banner -->
+            <div class="mb-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-amber-500/20 via-purple-900/40 to-black border-2 border-gold/60 shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 group">
+                <div class="space-y-3 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/20 border border-gold/50 text-gold text-xs font-bold">
+                        <i class="fa-solid fa-gift animate-bounce text-amber-300"></i> 免費體驗方案 ‧ 名額有限
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white">
+                        初階信仰短影音入門講座 <span class="text-gold text-lg font-normal">（1堂體驗課）</span>
+                    </h3>
+                    <p class="text-slate-300 text-xs sm:text-sm font-light max-w-2xl leading-relaxed">
+                        專為教會/宣教同工設計！快速釐清短影音核心邏輯、器材準備與福音轉化策略，適合想嘗試轉型新媒體的團隊搶先預約。
+                    </p>
+                </div>
                 
-                <!-- 課程 1：牧師講道篇 -->
-                <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300 bg-black/40 group">
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between border-b border-gold/20 pb-3">
-                            <span class="text-xs font-bold text-amber-300 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30">
-                                3 ～ 4 堂課
-                            </span>
-                            <i class="fa-solid fa-video text-gold text-lg"></i>
-                        </div>
-
-                        <h4 class="text-xl font-bold text-white group-hover:text-gold transition-colors">
-                            牧師講道很無聊？
-                        </h4>
-
-                        <p class="text-xs text-slate-300 leading-relaxed font-light">
-                            透過短影音社群，幫助大家更能體會牧師講道的重點，發現神的話<b>一點都不無聊，還很重要！</b>
-                        </p>
-
-                        <!-- 課程重點清單 -->
-                        <div class="space-y-2 pt-2 border-t border-slate-800">
-                            <span class="text-[11px] font-bold text-gold font-mono block">【課程重點】</span>
-                            <ul class="text-xs text-slate-300 space-y-1.5 font-light">
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 動態字幕特效教學</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 精華內容分段概念</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 社群優勢深度解析</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 實際操作（馬上產出素材）</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 按鈕區塊：範例連結 + 委託按鈕 -->
-                    <div class="space-y-2.5 pt-2">
-                        <!-- 醒目但不搶眼的成果範例按鈕 -->
-                        <a href="https://www.instagram.com/reel/DWJT3CuE63N/" target="_blank" class="w-full py-2 px-3 rounded-xl bg-black/60 border border-gold/25 hover:border-gold/60 text-slate-300 hover:text-gold text-[11px] font-medium transition-all flex items-center justify-center gap-2 group/btn">
-                            <i class="fa-brands fa-instagram text-pink-500 text-xs"></i>
-                            <span>觀看講道剪輯成果範例</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-60 group-hover/btn:opacity-100 transition-opacity"></i>
-                        </a>
-
-                        <a href="#contact" class="w-full py-3 rounded-xl bg-gold/10 border border-gold/40 text-gold text-xs font-bold hover:bg-gold hover:text-black transition-all text-center block shadow-lg">
-                            洽詢此課程委託
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 課程 2：團契破冰篇 -->
-                <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300 bg-black/40 group">
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between border-b border-gold/20 pb-3">
-                            <span class="text-xs font-bold text-purple-300 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30">
-                                5 ～ 6 堂課
-                            </span>
-                            <i class="fa-solid fa-fire-flame-curved text-gold text-lg"></i>
-                        </div>
-
-                        <h4 class="text-xl font-bold text-white group-hover:text-gold transition-colors">
-                            團契破冰是流量密碼
-                        </h4>
-
-                        <p class="text-xs text-slate-300 leading-relaxed font-light">
-                            每一次破冰大家都笑得開心，但這份喜悅不只可以分享，更能讓更多人有機會聽見福音！
-                        </p>
-
-                        <!-- 課程重點清單 -->
-                        <div class="space-y-2 pt-2 border-t border-slate-800">
-                            <span class="text-[11px] font-bold text-gold font-mono block">【課程重點】</span>
-                            <ul class="text-xs text-slate-300 space-y-1.5 font-light">
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 社群企劃全面規劃</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 多重特效視覺教學</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 剪輯技巧與聲音設計</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 一機如何搞定全流程</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 按鈕區塊：範例連結 + 委託按鈕 -->
-                    <div class="space-y-2.5 pt-2">
-                        <!-- 醒目但不搶眼的成果範例按鈕 -->
-                        <a href="https://www.instagram.com/p/Dae-EJ5SjFg/" target="_blank" class="w-full py-2 px-3 rounded-xl bg-black/60 border border-gold/25 hover:border-gold/60 text-slate-300 hover:text-gold text-[11px] font-medium transition-all flex items-center justify-center gap-2 group/btn">
-                            <i class="fa-brands fa-instagram text-pink-500 text-xs"></i>
-                            <span>觀看破冰企劃成果範例</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-60 group-hover/btn:opacity-100 transition-opacity"></i>
-                        </a>
-
-                        <a href="#contact" class="w-full py-3 rounded-xl bg-gold/10 border border-gold/40 text-gold text-xs font-bold hover:bg-gold hover:text-black transition-all text-center block shadow-lg">
-                            洽詢此課程委託
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 課程 3：快播快剪篇 -->
-                <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300 bg-black/40 group">
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between border-b border-gold/20 pb-3">
-                            <span class="text-xs font-bold text-emerald-300 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30">
-                                3 ～ 4 堂課
-                            </span>
-                            <i class="fa-solid fa-bolt text-gold text-lg"></i>
-                        </div>
-
-                        <h4 class="text-xl font-bold text-white group-hover:text-gold transition-colors">
-                            快播快剪與活動紀錄
-                        </h4>
-
-                        <p class="text-xs text-slate-300 leading-relaxed font-light">
-                            營會最後的回顧總是只放照片？不只教你拍，也教你如何在極短時間內做出美的回顧影片！
-                        </p>
-
-                        <!-- 課程重點清單 -->
-                        <div class="space-y-2 pt-2 border-t border-slate-800">
-                            <span class="text-[11px] font-bold text-gold font-mono block">【課程重點】</span>
-                            <ul class="text-xs text-slate-300 space-y-1.5 font-light">
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 活動手機拍攝實戰技巧</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 高效流暢剪輯邏輯</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 配合營會流程安排拍攝</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 調色調光視覺升級</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 按鈕區塊：範例連結 + 委託按鈕 -->
-                    <div class="space-y-2.5 pt-2">
-                        <!-- 醒目但不搶眼的成果範例按鈕 -->
-                        <a href="https://www.instagram.com/reel/DcV0kZLotip/" target="_blank" class="w-full py-2 px-3 rounded-xl bg-black/60 border border-gold/25 hover:border-gold/60 text-slate-300 hover:text-gold text-[11px] font-medium transition-all flex items-center justify-center gap-2 group/btn">
-                            <i class="fa-brands fa-instagram text-pink-500 text-xs"></i>
-                            <span>觀看快剪紀錄成果範例</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-60 group-hover/btn:opacity-100 transition-opacity"></i>
-                        </a>
-
-                        <a href="#contact" class="w-full py-3 rounded-xl bg-gold/10 border border-gold/40 text-gold text-xs font-bold hover:bg-gold hover:text-black transition-all text-center block shadow-lg">
-                            洽詢此課程委託
-                        </a>
-                    </div>
-                </div>
-
+                <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-black font-black text-sm tracking-wider hover:scale-105 transition-all shadow-xl shadow-gold/20 shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-check text-base"></i> 搶先預約免費體驗
+                </a>
             </div>
-        </div>
 
-    </div>
-</section>
+            <!-- 💎 三大付費委託專業課程卡片 -->
+            <div class="space-y-6">
+                <div class="text-center md:text-left">
+                    <h4 class="text-sm font-bold text-gold font-mono tracking-wider uppercase flex items-center justify-center md:justify-start gap-2">
+                        <i class="fa-solid fa-crown text-xs"></i> 付費委託深度實戰專業課程系列 (Professional Courses)
+                    </h4>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- 課程 1：牧師講道篇 -->
+                    <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300 bg-black/40 group">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between border-b border-gold/20 pb-3">
+                                <span class="text-xs font-bold text-amber-300 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30">
+                                    3 ～ 4 堂課
+                                </span>
+                                <i class="fa-solid fa-video text-gold text-lg"></i>
+                            </div>
+
+                            <h4 class="text-xl font-bold text-white group-hover:text-gold transition-colors">
+                                牧師講道很無聊？
+                            </h4>
+
+                            <p class="text-xs text-slate-300 leading-relaxed font-light">
+                                透過短影音社群，幫助大家更能體會牧師講道的重點，發現神的話<b>一點都不無聊，還很重要！</b>
+                            </p>
+
+                            <div class="space-y-2 pt-2 border-t border-slate-800">
+                                <span class="text-[11px] font-bold text-gold font-mono block">【課程重點】</span>
+                                <ul class="text-xs text-slate-300 space-y-1.5 font-light">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 動態字幕特效教學</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 精華內容分段概念</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 社群優勢深度解析</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 實際操作（馬上產出素材）</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2.5 pt-2">
+                            <a href="https://www.instagram.com/reel/DWJT3CuE63N/" target="_blank" class="w-full py-2 px-3 rounded-xl bg-black/60 border border-gold/25 hover:border-gold/60 text-slate-300 hover:text-gold text-[11px] font-medium transition-all flex items-center justify-center gap-2 group/btn">
+                                <i class="fa-brands fa-instagram text-pink-500 text-xs"></i>
+                                <span>觀看講道剪輯成果範例</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-60 group-hover/btn:opacity-100 transition-opacity"></i>
+                            </a>
+
+                            <a href="#contact" class="w-full py-3 rounded-xl bg-gold/10 border border-gold/40 text-gold text-xs font-bold hover:bg-gold hover:text-black transition-all text-center block shadow-lg">
+                                洽詢此課程委託
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 課程 2：團契破冰篇 -->
+                    <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300 bg-black/40 group">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between border-b border-gold/20 pb-3">
+                                <span class="text-xs font-bold text-purple-300 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30">
+                                    5 ～ 6 堂課
+                                </span>
+                                <i class="fa-solid fa-fire-flame-curved text-gold text-lg"></i>
+                            </div>
+
+                            <h4 class="text-xl font-bold text-white group-hover:text-gold transition-colors">
+                                團契破冰是流量密碼
+                            </h4>
+
+                            <p class="text-xs text-slate-300 leading-relaxed font-light">
+                                每一次破冰大家都笑得開心，但這份喜悅不只可以分享，更能讓更多人有機會聽見福音！
+                            </p>
+
+                            <div class="space-y-2 pt-2 border-t border-slate-800">
+                                <span class="text-[11px] font-bold text-gold font-mono block">【課程重點】</span>
+                                <ul class="text-xs text-slate-300 space-y-1.5 font-light">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 社群企劃全面規劃</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 多重特效視覺教學</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 剪輯技巧與聲音設計</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 一機如何搞定全流程</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2.5 pt-2">
+                            <a href="https://www.instagram.com/p/Dae-EJ5SjFg/" target="_blank" class="w-full py-2 px-3 rounded-xl bg-black/60 border border-gold/25 hover:border-gold/60 text-slate-300 hover:text-gold text-[11px] font-medium transition-all flex items-center justify-center gap-2 group/btn">
+                                <i class="fa-brands fa-instagram text-pink-500 text-xs"></i>
+                                <span>觀看破冰企劃成果範例</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-60 group-hover/btn:opacity-100 transition-opacity"></i>
+                            </a>
+
+                            <a href="#contact" class="w-full py-3 rounded-xl bg-gold/10 border border-gold/40 text-gold text-xs font-bold hover:bg-gold hover:text-black transition-all text-center block shadow-lg">
+                                洽詢此課程委託
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 課程 3：快播快剪篇 -->
+                    <div class="glass-card rounded-3xl p-6 border border-gold/30 flex flex-col justify-between space-y-6 hover:border-gold/60 transition-all duration-300 bg-black/40 group">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between border-b border-gold/20 pb-3">
+                                <span class="text-xs font-bold text-emerald-300 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30">
+                                    3 ～ 4 堂課
+                                </span>
+                                <i class="fa-solid fa-bolt text-gold text-lg"></i>
+                            </div>
+
+                            <h4 class="text-xl font-bold text-white group-hover:text-gold transition-colors">
+                                快播快剪與活動紀錄
+                            </h4>
+
+                            <p class="text-xs text-slate-300 leading-relaxed font-light">
+                                營會最後的回顧總是只放照片？不只教你拍，也教你如何在極短時間內做出美的回顧影片！
+                            </p>
+
+                            <div class="space-y-2 pt-2 border-t border-slate-800">
+                                <span class="text-[11px] font-bold text-gold font-mono block">【課程重點】</span>
+                                <ul class="text-xs text-slate-300 space-y-1.5 font-light">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 活動手機拍攝實戰技巧</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 高效流暢剪輯邏輯</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 配合營會流程安排拍攝</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold text-[10px]"></i> 調色調光視覺升級</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2.5 pt-2">
+                            <a href="https://www.instagram.com/reel/DcV0kZLotip/" target="_blank" class="w-full py-2 px-3 rounded-xl bg-black/60 border border-gold/25 hover:border-gold/60 text-slate-300 hover:text-gold text-[11px] font-medium transition-all flex items-center justify-center gap-2 group/btn">
+                                <i class="fa-brands fa-instagram text-pink-500 text-xs"></i>
+                                <span>觀看快剪紀錄成果範例</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-60 group-hover/btn:opacity-100 transition-opacity"></i>
+                            </a>
+
+                            <a href="#contact" class="w-full py-3 rounded-xl bg-gold/10 border border-gold/40 text-gold text-xs font-bold hover:bg-gold hover:text-black transition-all text-center block shadow-lg">
+                                洽詢此課程委託
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto z-10 relative scroll-mt-24">
         <div class="glass-card rounded-3xl p-8 sm:p-12 border border-gold/40 bg-gradient-to-br from-studio-card to-black">
@@ -1178,38 +1136,38 @@
                 </div>
 
                 <!-- Interactive Contact Form (已串接 Formspree 信箱轉寄) -->
-<form action="https://formspree.io/f/mdeoyvln" method="POST" class="space-y-4">
-    <div>
-        <label class="block text-xs text-slate-300 mb-1">您的姓名 / 單位</label>
-        <input type="text" name="姓名單位" required placeholder="例如：張先生 / 某某影業 / 某某教會" class="w-full px-4 py-3 rounded-xl bg-black/60 border border-gold/20 text-white placeholder-slate-500 focus:outline-none focus:border-gold text-xs sm:text-sm">
-    </div>
+                <form action="https://formspree.io/f/mdeoyvln" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-1">您的姓名 / 單位</label>
+                        <input type="text" name="姓名單位" required placeholder="例如：張先生 / 某某影業 / 某某教會" class="w-full px-4 py-3 rounded-xl bg-black/60 border border-gold/20 text-white placeholder-slate-500 focus:outline-none focus:border-gold text-xs sm:text-sm">
+                    </div>
 
-    <div>
-        <label class="block text-xs text-slate-300 mb-1">電子郵件 / 聯絡電話</label>
-        <input type="text" name="聯絡方式" required placeholder="yourname@email.com / 09xx-xxx-xxx" class="w-full px-4 py-3 rounded-xl bg-black/60 border border-gold/20 text-white placeholder-slate-500 focus:outline-none focus:border-gold text-xs sm:text-sm">
-    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-1">電子郵件 / 聯絡電話</label>
+                        <input type="text" name="聯絡方式" required placeholder="yourname@email.com / 09xx-xxx-xxx" class="w-full px-4 py-3 rounded-xl bg-black/60 border border-gold/20 text-white placeholder-slate-500 focus:outline-none focus:border-gold text-xs sm:text-sm">
+                    </div>
 
-    <div>
-        <label class="block text-xs text-slate-300 mb-1">合作諮詢項目</label>
-        <select name="諮詢項目" class="w-full px-4 py-3 rounded-xl bg-black/60 border border-gold/20 text-white focus:outline-none focus:border-gold text-xs sm:text-sm">
-            <option value="專案導演 / 影像拍攝">專案導演 / 影像拍攝</option>
-            <option value="電影/短片配樂與聲音設計">電影/短片配樂與聲音設計</option>
-            <option value="【免費預約】教會系列短影音課程">【免費預約】教會系列短影音課程</option>
-            <option value="活動快播快剪與紀錄">活動快播快剪與紀錄</option>
-            <option value="《聖術師》小說索取 / 改編">《聖術師》小說索取 / 改編</option>
-            <option value="社群魔法排版與短影音企劃">社群魔法排版與短影音企劃</option>
-        </select>
-    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-1">合作諮詢項目</label>
+                        <select name="諮詢項目" class="w-full px-4 py-3 rounded-xl bg-black/60 border border-gold/20 text-white focus:outline-none focus:border-gold text-xs sm:text-sm">
+                            <option value="專案導演 / 影像拍攝">專案導演 / 影像拍攝</option>
+                            <option value="電影/短片配樂與聲音設計">電影/短片配樂與聲音設計</option>
+                            <option value="【免費預約】教會系列短影音課程">【免費預約】教會系列短影音課程</option>
+                            <option value="活動快播快剪與紀錄">活動快播快剪與紀錄</option>
+                            <option value="《聖術師》小說索取 / 改編">《聖術師》小說索取 / 改編</option>
+                            <option value="社群魔法排版與短影音企劃">社群魔法排版與短影音企劃</option>
+                        </select>
+                    </div>
 
-    <div>
-        <label class="block text-xs text-slate-300 mb-1">專案需求說明</label>
-        <textarea name="專案需求" rows="3" required placeholder="請簡述您的專案時間、需求與預算規劃..." class="w-full px-4 py-3 rounded-xl bg-black/60 border border-gold/20 text-white placeholder-slate-500 focus:outline-none focus:border-gold text-xs sm:text-sm"></textarea>
-    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-1">專案需求說明</label>
+                        <textarea name="專案需求" rows="3" required placeholder="請簡述您的專案時間、需求與預算規劃..." class="w-full px-4 py-3 rounded-xl bg-black/60 border border-gold/20 text-white placeholder-slate-500 focus:outline-none focus:border-gold text-xs sm:text-sm"></textarea>
+                    </div>
 
-    <button type="submit" class="w-full py-3.5 rounded-xl btn-magic text-black font-bold text-sm tracking-wider shadow-lg">
-        傳送魔法訊息 <i class="fa-solid fa-paper-plane ml-1"></i>
-    </button>
-</form>
+                    <button type="submit" class="w-full py-3.5 rounded-xl btn-magic text-black font-bold text-sm tracking-wider shadow-lg">
+                        傳送魔法訊息 <i class="fa-solid fa-paper-plane ml-1"></i>
+                    </button>
+                </form>
 
             </div>
         </div>
@@ -1315,18 +1273,7 @@
             menu.classList.toggle('hidden');
         }
 
-        // 2. Contact Form Handling
-        function handleContactSubmit(event) {
-            event.preventDefault();
-            const successBox = document.getElementById('contact-success');
-            successBox.classList.remove('hidden');
-            event.target.reset();
-            setTimeout(() => {
-                successBox.classList.add('hidden');
-            }, 5000);
-        }
-
-        // 3. 小說 Modal 彈窗控制
+        // 2. 小說 Modal 彈窗控制
         function openModal(modalId) {
             const modal = document.getElementById(modalId);
             if (modal) modal.classList.remove('hidden');
@@ -1337,7 +1284,7 @@
             if (modal) modal.classList.add('hidden');
         }
 
-        // 4. Video Modal Handlers
+        // 3. Video Modal Handlers
         function openVideoModal(title, desc, embedUrl) {
             document.getElementById('video-modal-title').innerText = title;
             document.getElementById('video-modal-desc').innerText = desc;
@@ -1350,7 +1297,7 @@
             document.getElementById('video-modal').classList.add('hidden');
         }
 
-        // 5. 柔和白噪音播放控制 (Web Audio API)
+        // 4. 柔和白噪音播放控制 (Web Audio API)
         let audioCtx = null;
         let noiseNode = null;
         let isAudioPlaying = false;
@@ -1368,13 +1315,12 @@
                     audioCtx.resume();
                 }
 
-                // 生成 5 秒柔和舒緩白噪音
                 const bufferSize = audioCtx.sampleRate * 5;
                 const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
                 const data = buffer.getChannelData(0);
 
                 for (let i = 0; i < bufferSize; i++) {
-                    data[i] = (Math.random() * 2 - 1) * 0.025; // 極低音量，舒服沉浸
+                    data[i] = (Math.random() * 2 - 1) * 0.025;
                 }
 
                 noiseNode = audioCtx.createBufferSource();
@@ -1394,74 +1340,65 @@
             }
         }
 
-   // 6. Background Magic Particles Canvas (顯眼魔法閃耀亮粉版)
-window.onload = function() {
-    const canvas = document.getElementById('magic-canvas');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
+        // 5. Background Magic Particles Canvas
+        window.onload = function() {
+            const canvas = document.getElementById('magic-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
 
-    function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
-
-    const particles = [];
-    // 1. 增加光點數量 (從 45 提升到 85)
-    const particleCount = 85;
-
-    for (let i = 0; i < particleCount; i++) {
-        particles.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            // 2. 放大光點尺寸 (原 0.5~2.5px 提升至 1.5~4.5px)
-            radius: Math.random() * 3 + 1.5,
-            color: Math.random() > 0.3 ? '#E5C158' : '#FFFFFF',
-            // 3. 提升基礎亮度 (原 0.2~0.8 提升至 0.5~1.0)
-            alpha: Math.random() * 0.5 + 0.5,
-            speedY: Math.random() * 0.6 + 0.2,
-            speedX: (Math.random() - 0.5) * 0.4,
-            // 4. 動態呼吸閃爍效果
-            pulse: Math.random() * 0.05 + 0.01
-        });
-    }
-
-    function animateParticles() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        particles.forEach(p => {
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-            ctx.fillStyle = p.color;
-            ctx.globalAlpha = p.alpha;
-            
-            // 5. 加強光暈擴散效果 (發光半徑升至 15px)
-            ctx.shadowBlur = 15;
-            ctx.shadowColor = p.color;
-            ctx.fill();
-
-            // 粒子向上漂浮運動
-            p.y -= p.speedY;
-            p.x += p.speedX;
-
-            // 呼吸閃爍淡入淡出變化
-            p.alpha += Math.sin(Date.now() * 0.003) * p.pulse;
-            if (p.alpha > 1) p.alpha = 1;
-            if (p.alpha < 0.3) p.alpha = 0.3;
-
-            // 超出螢幕頂端後重設到底部
-            if (p.y < 0) {
-                p.y = canvas.height;
-                p.x = Math.random() * canvas.width;
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
             }
-        });
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
 
-        requestAnimationFrame(animateParticles);
-    }
+            const particles = [];
+            const particleCount = 85;
 
-    animateParticles();
-};
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 3 + 1.5,
+                    color: Math.random() > 0.3 ? '#E5C158' : '#FFFFFF',
+                    alpha: Math.random() * 0.5 + 0.5,
+                    speedY: Math.random() * 0.6 + 0.2,
+                    speedX: (Math.random() - 0.5) * 0.4,
+                    pulse: Math.random() * 0.05 + 0.01
+                });
+            }
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach(p => {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = p.color;
+                    ctx.globalAlpha = p.alpha;
+                    ctx.shadowBlur = 15;
+                    ctx.shadowColor = p.color;
+                    ctx.fill();
+
+                    p.y -= p.speedY;
+                    p.x += p.speedX;
+
+                    p.alpha += Math.sin(Date.now() * 0.003) * p.pulse;
+                    if (p.alpha > 1) p.alpha = 1;
+                    if (p.alpha < 0.3) p.alpha = 0.3;
+
+                    if (p.y < 0) {
+                        p.y = canvas.height;
+                        p.x = Math.random() * canvas.width;
+                    }
+                });
+
+                requestAnimationFrame(animateParticles);
+            }
+
+            animateParticles();
+        };
     </script>
 </body>
 </html>
