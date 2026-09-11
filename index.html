@@ -1355,49 +1355,26 @@
             document.getElementById('video-modal').classList.add('hidden');
         }
 
-        // 5. 柔和白噪音播放控制 (Web Audio API)
-        let audioCtx = null;
-        let noiseNode = null;
-        let isAudioPlaying = false;
+       // 原創鋼琴背景音樂控制
+let pianoAudio = new Audio('images/bgm-piano.mp3');
+pianoAudio.loop = true; // 30分鐘播放完畢後會自動循環
+let isAudioPlaying = false;
 
-        function toggleAudio() {
-            const icon = document.getElementById('audio-icon');
-
-            if (!isAudioPlaying) {
-                if (!audioCtx) {
-                    const AudioContext = window.AudioContext || window.webkitAudioContext;
-                    audioCtx = new AudioContext();
-                }
-
-                if (audioCtx.state === 'suspended') {
-                    audioCtx.resume();
-                }
-
-                // 生成 5 秒柔和舒緩白噪音
-                const bufferSize = audioCtx.sampleRate * 5;
-                const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
-                const data = buffer.getChannelData(0);
-
-                for (let i = 0; i < bufferSize; i++) {
-                    data[i] = (Math.random() * 2 - 1) * 0.025; // 極低音量，舒服沉浸
-                }
-
-                noiseNode = audioCtx.createBufferSource();
-                noiseNode.buffer = buffer;
-                noiseNode.loop = true;
-                noiseNode.connect(audioCtx.destination);
-                noiseNode.start();
-
-                isAudioPlaying = true;
-                if (icon) icon.className = 'fa-solid fa-volume-high text-gold';
-            } else {
-                if (noiseNode) {
-                    noiseNode.stop();
-                }
-                isAudioPlaying = false;
-                if (icon) icon.className = 'fa-solid fa-volume-xmark';
-            }
-        }
+function toggleAudio() {
+    const icon = document.getElementById('audio-icon');
+    if (!isAudioPlaying) {
+        pianoAudio.play().then(() => {
+            isAudioPlaying = true;
+            if (icon) icon.className = 'fa-solid fa-volume-high text-gold';
+        }).catch(err => {
+            console.log("播放被瀏覽器阻擋，請點擊按鈕手動播放", err);
+        });
+    } else {
+        pianoAudio.pause();
+        isAudioPlaying = false;
+        if (icon) icon.className = 'fa-solid fa-volume-xmark';
+    }
+}
 
    // 6. Background Magic Particles Canvas (顯眼魔法閃耀亮粉版)
 window.onload = function() {
