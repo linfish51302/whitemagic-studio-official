@@ -401,77 +401,69 @@
         </div>
       </div>
 
-      <!-- 布萊音樂工作室 品牌整合區塊 -->
-      <div class="mt-16 glass-card rounded-3xl p-8 border border-gold/40 relative overflow-hidden">
+    <!-- 布萊音樂工作室 品牌整合區塊（專屬主視覺背景版） -->
+      <div class="mt-16 glass-card rounded-3xl p-8 border border-gold/40 relative overflow-hidden group">
+        
+        <!-- 圖片背景層：適度透明度與柔和漸層，完美融入深色網站風格 -->
+        <div class="absolute inset-0 -z-10 bg-cover bg-center opacity-30 filter contrast-125 saturate-110 group-hover:scale-105 transition-transform duration-1000" style="background-image: url('images/bulai-bg.png');"></div>
+        
+        <!-- 深色黑色漸層壓光遮罩 (防止淺色背景干擾白字閱讀) -->
+        <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/85 via-black/75 to-black/90"></div>
+
+        <!-- 柔和金色發光暈 -->
         <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-gold/20">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-gold/20 relative z-10">
           <div class="space-y-2">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 backdrop-blur-md">
               <i class="fa-solid fa-compact-disc text-gold text-xs animate-spin-slow"></i>
               <span class="text-[10px] font-mono text-gold tracking-widest uppercase">MUSIC BRAND INTEGRATION</span>
             </div>
-            <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">
-              品牌經典典藏：布萊音樂工作室 <span class="text-gold text-lg font-normal">Bulai Music Studio</span>
+            <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white drop-shadow-md">
+              品牌經典典藏：布萊音樂工作室 <span class="text-gold text-lg font-normal block sm:inline">Bulai Music Studio</span>
             </h3>
-            <p class="text-slate-300 text-xs sm:text-sm font-light max-w-2xl leading-relaxed">
+            <p class="text-slate-300 text-xs sm:text-sm font-light max-w-2xl leading-relaxed drop-shadow">
               「布萊音樂工作室」現已正式併入白魔法藝術工作室宇宙。這裡沉澱了歷年原創聲學創作、LIVE 系列與奇幻風格配樂，持續為視覺與靈魂提供最純粹的音樂能量。
             </p>
           </div>
 
-          <a href="https://www.youtube.com/@%E5%B8%83%E8%90%8A%E9%9F%B3%E6%A8%82%E5%B7%A5%E4%BD%9C%E5%AE%A4/featured" target="_blank" class="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-red-600/90 hover:bg-red-600 text-white font-bold text-xs shadow-lg shadow-red-600/20 hover:scale-105 transition-all shrink-0">
+          <a href="https://www.youtube.com/@%E5%B8%83%E8%90%8A%E9%9F%B3%E6%A8%82%E5%B7%A5%E4%BD%9C%E5%AE%A4/featured" target="_blank" class="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs shadow-lg shadow-red-600/30 hover:scale-105 transition-all shrink-0">
             <i class="fa-brands fa-youtube text-lg"></i>
             前往 YouTube 官方頻道
           </a>
         </div>
 
-        <!-- 3 首精選代表作 -->
-        <div class="pt-8 space-y-4">
+        <div class="pt-8 space-y-4 relative z-10">
           <h4 class="text-sm font-bold text-gold font-mono tracking-wider uppercase flex items-center gap-2">
             <i class="fa-solid fa-star text-xs"></i> 核心代表作試聽 (Top Picks)
           </h4>
 
           <div class="grid md:grid-cols-3 gap-6 pt-2">
-            <a href="https://youtu.be/o6LXLmKIWYs?si=TgWLLXYT18Jec2pM" target="_blank" class="p-5 rounded-2xl bg-black/40 border border-gold/20 hover:border-gold/60 transition-all block group">
+            <a href="https://youtu.be/o6LXLmKIWYs?si=TgWLLXYT18Jec2pM" target="_blank" class="p-5 rounded-2xl bg-black/65 backdrop-blur-md border border-gold/20 hover:border-gold/60 transition-all block group/item">
               <div class="flex items-start justify-between">
                 <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">奇幻配樂</span>
-                <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors"></i>
+                <i class="fa-brands fa-youtube text-slate-500 group-hover/item:text-red-500 transition-colors"></i>
               </div>
-              <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】 微電影-起司蛋糕 插曲 鼠行調</h5>
-              <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
-                以弦樂撥奏詮釋老鼠人偷偷摸摸的狡詐感，充滿奇幻特色。
-              </p>
-              <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
-                線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </span>
+              <h5 class="text-base font-bold text-white group-hover/item:text-gold transition-colors mt-3">【布萊配音樂】 微電影-起司蛋糕 插曲 鼠行調</h5>
+              <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed">以弦樂撥奏詮釋老鼠人偷偷摸摸的狡詐感，充滿奇幻特色。</p>
             </a>
 
-            <a href="https://youtu.be/0xtum6rAMtU?si=0nR65QlKjdUvuyk8" target="_blank" class="p-5 rounded-2xl bg-black/40 border border-gold/20 hover:border-gold/60 transition-all block group">
+            <a href="https://youtu.be/0xtum6rAMtU?si=0nR65QlKjdUvuyk8" target="_blank" class="p-5 rounded-2xl bg-black/65 backdrop-blur-md border border-gold/20 hover:border-gold/60 transition-all block group/item">
               <div class="flex items-start justify-between">
                 <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">浪漫配樂</span>
-                <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors"></i>
+                <i class="fa-brands fa-youtube text-slate-500 group-hover/item:text-red-500 transition-colors"></i>
               </div>
-              <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】微電影-此刻 主題曲</h5>
-              <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
-                用鋼琴最純潔乾淨的旋律，詮釋真摯的愛情與永恆約定。
-              </p>
-              <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
-                線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </span>
+              <h5 class="text-base font-bold text-white group-hover/item:text-gold transition-colors mt-3">【布萊配音樂】微電影-此刻 主題曲</h5>
+              <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed">用鋼琴最純潔乾淨的旋律，詮釋真摯的愛情與永恆約定。</p>
             </a>
 
-            <a href="https://youtu.be/mkTX3bS84V8?si=sj_ta0naWMeVJZVl" target="_blank" class="p-5 rounded-2xl bg-black/40 border border-gold/20 hover:border-gold/60 transition-all block group">
+            <a href="https://youtu.be/mkTX3bS84V8?si=sj_ta0naWMeVJZVl" target="_blank" class="p-5 rounded-2xl bg-black/65 backdrop-blur-md border border-gold/20 hover:border-gold/60 transition-all block group/item">
               <div class="flex items-start justify-between">
                 <span class="text-[10px] font-mono px-2.5 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">弦樂配樂</span>
-                <i class="fa-brands fa-youtube text-slate-500 group-hover:text-red-500 transition-colors"></i>
+                <i class="fa-brands fa-youtube text-slate-500 group-hover/item:text-red-500 transition-colors"></i>
               </div>
-              <h5 class="text-base font-bold text-white group-hover:text-gold transition-colors mt-3">【布萊配音樂】微電影-來不及說的故事 主題曲</h5>
-              <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed line-clamp-2">
-                大提琴獨奏呈現內心糾結與情感波瀾，極具渲染力。
-              </p>
-              <span class="inline-flex items-center gap-1.5 text-xs text-gold font-bold mt-4 group-hover:translate-x-1 transition-transform">
-                線上聆聽 <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </span>
+              <h5 class="text-base font-bold text-white group-hover/item:text-gold transition-colors mt-3">【布萊配音樂】微電影-來不及說的故事 主題曲</h5>
+              <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed">大提琴獨奏呈現內心糾結與情感波瀾，極具渲染力。</p>
             </a>
           </div>
         </div>
