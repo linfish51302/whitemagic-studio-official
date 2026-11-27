@@ -1194,9 +1194,10 @@
             </p>
         </div>
     </footer>
-
-    <!-- JavaScript -->
+<!-- JavaScript -->
     <script>
+        const INQUIRY_API_URL = 'https://script.google.com/macros/s/AKfycbzKK06qlbfm1GGhOSideXy8tbHo-7uvumZwv59_BpaimCCEvvWeb3_WA624Pwwq-fHX/exec';
+
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
@@ -1205,24 +1206,53 @@
         function handleContactSubmit(event, form) {
             event.preventDefault();
             const successBox = document.getElementById('contact-success');
+            const submitBtn = form.querySelector('button[type="submit"]');
             const formData = new FormData(form);
+            const params = new URLSearchParams();
 
-            fetch(form.action, {
-                method: form.method,
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    if (successBox) successBox.classList.remove('hidden');
-                    form.reset();
-                    setTimeout(() => {
-                        if (successBox) successBox.classList.add('hidden');
-                    }, 6000);
-                } else {
-                    form.submit();
+            for (const [key, value] of formData.entries()) {
+                params.append(key, value);
+            }
+
+            if (!INQUIRY_API_URL || INQUIRY_API_URL.indexOf('把你的_APPS_SCRIPT_網址貼在這裡') !== -1) {
+                alert('請先在程式碼中填入你的 Google Apps Script 網址');
+                return;
+            }
+
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.dataset.originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '傳送中... <i class="fa-solid fa-spinner fa-spin ml-1"></i>';
+            }
+
+            fetch(INQUIRY_API_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: params
+            })
+            .then(() => {
+                if (successBox) {
+                    successBox.innerText = '訊息已送出，榆軒 Brian 收到後會盡快與您聯繫。';
+                    successBox.classList.remove('hidden');
                 }
-            }).catch(() => {
-                form.submit();
+                form.reset();
+                setTimeout(() => {
+                    if (successBox) successBox.classList.add('hidden');
+                }, 6000);
+            })
+            .catch(() => {
+                if (successBox) {
+                    successBox.innerText = '傳送時遇到網路問題，請稍後再試或直接來電 0978973800。';
+                    successBox.classList.remove('hidden');
+                }
+            })
+            .finally(() => {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    if (submitBtn.dataset.originalText) {
+                        submitBtn.innerHTML = submitBtn.dataset.originalText;
+                    }
+                }
             });
         }
 
